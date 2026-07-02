@@ -224,14 +224,14 @@ export default function Qa() {
         @media (max-width: 992px) {
           .qa-layout {
             grid-template-columns: 1fr;
-            gap: 40px;
+            gap: 36px;
           }
           .qa-left-col {
             position: relative;
             top: 0;
           }
           .qa-title {
-            font-size: 3rem;
+            font-size: 2.8rem;
           }
         }
 
@@ -240,13 +240,34 @@ export default function Qa() {
             padding: 60px 0;
           }
           .qa-title {
-            font-size: 2.5rem !important;
+            font-size: 2.2rem !important;
           }
           .qa-trigger {
-            padding: 20px 24px;
+            padding: 18px 20px;
           }
           .qa-content {
-            padding: 0 24px 20px 24px;
+            padding: 0 20px 18px 20px;
+          }
+          .qa-question {
+            font-size: 1rem;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .qa-title {
+            font-size: 1.9rem !important;
+          }
+          .qa-subtitle {
+            font-size: 0.95rem;
+          }
+          .qa-trigger {
+            padding: 16px 18px;
+          }
+          .qa-question {
+            font-size: 0.95rem;
+          }
+          .qa-item {
+            border-radius: 16px;
           }
         }
       `}</style>

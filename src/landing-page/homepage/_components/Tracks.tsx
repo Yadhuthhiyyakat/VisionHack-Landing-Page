@@ -206,9 +206,37 @@ export default function Tracks() {
           flex-shrink: 0;
         }
 
+        @media (max-width: 1024px) {
+          .tracks-grid {
+            grid-template-columns: repeat(2, 1fr);
+          }
+          .tracks-section .section-title {
+            font-size: 2rem;
+          }
+        }
+
         @media (max-width: 768px) {
+          .tracks-section {
+            padding: 60px 0;
+          }
           .tracks-grid {
             grid-template-columns: 1fr;
+            gap: 20px;
+          }
+          .tracks-section .section-title {
+            font-size: 1.75rem;
+          }
+          .tracks-section .section-desc {
+            font-size: 1rem;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .track-card {
+            padding: 28px 20px;
+          }
+          .tracks-section .section-title {
+            font-size: 1.5rem;
           }
         }
       `}</style>

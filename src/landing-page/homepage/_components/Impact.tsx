@@ -182,9 +182,15 @@ export default function Impact() {
         }
 
         @media (max-width: 992px) {
+          .impact-section {
+            padding: 70px 0;
+          }
           .impact-grid {
             grid-template-columns: repeat(2, 1fr);
             gap: 20px;
+          }
+          .impact-title {
+            font-size: 2.4rem;
           }
         }
 
@@ -193,13 +199,25 @@ export default function Impact() {
             padding: 60px 0;
           }
           .impact-title {
-            font-size: 2.2rem !important;
+            font-size: 2rem !important;
           }
         }
 
         @media (max-width: 576px) {
           .impact-grid {
             grid-template-columns: 1fr;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .impact-card {
+            padding: 24px 20px;
+          }
+          .impact-card-number {
+            font-size: 2.2rem;
+          }
+          .impact-title {
+            font-size: 1.75rem !important;
           }
         }
       `}</style>

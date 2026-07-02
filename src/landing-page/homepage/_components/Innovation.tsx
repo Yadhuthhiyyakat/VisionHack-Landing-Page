@@ -153,20 +153,44 @@ export default function Innovation() {
           line-height: 1.5;
         }
 
+        @media (max-width: 1024px) {
+          .innovation-grid {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+          }
+          .innovation-title {
+            font-size: 2.4rem;
+          }
+          .innovation-desc {
+            font-size: 1.3rem;
+          }
+        }
+
         @media (max-width: 768px) {
+          .innovation-section {
+            padding: 60px 0;
+          }
           .innovation-grid {
             grid-template-columns: 1fr;
             gap: 20px;
-            padding: 0 10px;
           }
           .innovation-title {
             font-size: 2rem !important;
           }
           .innovation-desc {
-            font-size: 1.25rem !important;
+            font-size: 1.15rem !important;
           }
-          .innovation-header {
-            padding: 0 10px;
+        }
+
+        @media (max-width: 480px) {
+          .innovation-card {
+            padding: 28px 20px;
+          }
+          .innovation-title {
+            font-size: 1.7rem !important;
+          }
+          .innovation-desc {
+            font-size: 1rem !important;
           }
         }
       `}</style>

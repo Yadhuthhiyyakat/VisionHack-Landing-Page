@@ -276,15 +276,40 @@ export default function Footer() {
           }
         }
 
+        @media (max-width: 992px) {
+          .footer-grid {
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+          }
+          .footer-left-col {
+            grid-column: 1 / -1; /* span full width */
+          }
+        }
+
         @media (max-width: 768px) {
+          .footer-white {
+            padding: 60px 0 24px 0;
+          }
           .footer-grid {
             grid-template-columns: 1fr;
-            gap: 40px;
+            gap: 36px;
+          }
+          .footer-left-col {
+            grid-column: auto;
           }
           .footer-bottom-bar {
             flex-direction: column;
-            gap: 15px;
+            gap: 12px;
             text-align: center;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .footer-org-pills {
+            gap: 8px;
+          }
+          .footer-desc {
+            font-size: 0.9rem;
           }
         }
       `}</style>

@@ -199,23 +199,55 @@ export default function Countdown() {
         }
 
         @media (max-width: 768px) {
+          .countdown-section {
+            padding: 50px 0;
+          }
           .countdown-grid {
             grid-template-columns: repeat(2, 1fr);
             gap: 15px;
-            padding: 0 10px;
+          }
+          .countdown-num {
+            font-size: 2.2rem;
           }
           .countdown-buttons {
             flex-direction: column;
             gap: 12px;
-            padding: 0 20px;
             align-items: center;
           }
           .countdown-btn-green, .countdown-btn-outline {
             width: 100%;
             max-width: 320px;
           }
-          #countdown .section-header {
-            padding: 0 10px;
+          #countdown .section-title {
+            font-size: 1.75rem;
+          }
+          #countdown .section-desc {
+            font-size: 1.05rem;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .countdown-section {
+            padding: 40px 0;
+          }
+          #countdown .section-title {
+            font-size: 1.5rem;
+          }
+          #countdown .section-desc {
+            font-size: 0.95rem;
+          }
+          .countdown-num {
+            font-size: 1.8rem;
+          }
+          .countdown-label {
+            font-size: 1rem;
+          }
+          .countdown-card {
+            padding: 18px 12px;
+          }
+          .countdown-btn-green, .countdown-btn-outline {
+            font-size: 0.9rem;
+            padding: 11px 20px;
           }
         }
       `}</style>

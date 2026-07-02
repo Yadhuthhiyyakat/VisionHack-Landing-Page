@@ -217,6 +217,18 @@ export default function Navbar() {
           color: var(--color-green);
         }
 
+        @media (max-width: 1024px) {
+          header .btn-register-pill {
+            display: none;
+          }
+          .nav-links {
+            display: none;
+          }
+          .mobile-menu-btn {
+            display: block;
+          }
+        }
+
         @media (max-width: 768px) {
           header.glass-panel {
             padding: 0 20px;
@@ -225,17 +237,11 @@ export default function Navbar() {
             top: 0;
             left: 0;
             transform: none;
-            height: 80px;
+            height: 70px;
             border-radius: 0;
-          }
-          .nav-links {
-            display: none;
           }
           header .button-primary {
             display: none;
-          }
-          .mobile-menu-btn {
-            display: block;
           }
         }
       `}</style>

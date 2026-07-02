@@ -219,6 +219,27 @@ export default function Leadership() {
             grid-template-columns: 1fr;
           }
         }
+
+        @media (max-width: 480px) {
+          .leadership-card {
+            padding: 18px 16px;
+            gap: 14px;
+          }
+          .leader-avatar {
+            width: 44px;
+            height: 44px;
+            font-size: 1rem;
+          }
+          .leader-name {
+            font-size: 0.95rem;
+          }
+          .leader-role {
+            font-size: 0.8rem;
+          }
+          .leadership-title {
+            font-size: 1.9rem !important;
+          }
+        }
       `}</style>
     </section>
   );

@@ -198,6 +198,12 @@ export default function Kudumbashree() {
           .kudumbashree-grid, .kudumbashree-header, .kudumbashree-challenge-box {
             max-width: 90%;
           }
+          .kudumbashree-challenge-box {
+            padding: 24px 30px;
+          }
+          .kudumbashree-title {
+            font-size: 2.4rem;
+          }
         }
 
         @media (max-width: 768px) {
@@ -214,11 +220,23 @@ export default function Kudumbashree() {
           .kudumbashree-challenge-box {
             flex-direction: column;
             align-items: flex-start;
-            padding: 30px 20px;
-            gap: 20px;
+            padding: 24px 20px;
+            gap: 16px;
           }
           .kudumbashree-challenge-icon-wrapper {
             align-self: flex-start;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .kudumbashree-title {
+            font-size: 1.9rem !important;
+          }
+          .kudumbashree-card {
+            padding: 28px 20px;
+          }
+          .kudumbashree-challenge-desc {
+            font-size: 0.95rem;
           }
         }
       `}</style>
